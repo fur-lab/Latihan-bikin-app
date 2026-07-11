@@ -1,0 +1,14 @@
+html,
+body {
+    background-color: rgb(172, 39, 39);
+}
+
+body {
+    color: rgb(16, 34, 34);
+}
+
+h1 {
+    color: antiquewhite;
+    margin-left: 4px;
+    margin-top: 40px;
+}

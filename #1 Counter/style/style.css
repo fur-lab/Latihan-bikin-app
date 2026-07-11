@@ -1,0 +1,21 @@
+html, 
+body {
+    background-color: rgb(122, 129, 132)
+}
+
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    margin-top: 250px;
+}
+
+.button_PM {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
