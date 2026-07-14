@@ -1,7 +1,7 @@
-const btn = document.getElementById("btn-switch")
-let colorName = document.getElementById("color-name")
+const btn = document.getElementById("btn-switch");
+const colorName = document.querySelector(".color");
 
-let color = [
+const colors = [
     "#FF0000", 
     "#0000FF", 
     "#008000", 
@@ -54,10 +54,17 @@ let color = [
     "#FF6347"
 ];
 
-btn.addEventListener("click", () => {
-    colorName = color;
-});
+btn.addEventListener("click", changeBg);
 
-function setBg() {
-    document.body.color = Math.floor(Math.random(), colorName)
+function changeBg() {
+    const randomNumber = getRadnomNumber();
+    const selectColor = colors[randomNumber];
+
+    document.body.style.backgroundColor = selectColor;
+    colorName.style.colorName = selectColor;
+    colorName.textContent = selectColor;
+}
+
+function getRadnomNumber() {
+    return Math.floor(Math.random() * colorName.lenght);
 }

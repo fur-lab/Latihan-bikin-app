@@ -1,11 +1,10 @@
-let min = document.getElementById("box-min");
-let max = document.getElementById("box-max");
 let num = document.getElementById("angka");
 const generator = document.getElementById("btn-generate");
 
-const ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
-
-
 generator.addEventListener("click", () => {
-    num = ranNum;
+    let min = Number(document.getElementById("box-min").value);
+    let max = Number(document.getElementById("box-max").value);
+    let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
 });
+
+num.value = ranNum;
